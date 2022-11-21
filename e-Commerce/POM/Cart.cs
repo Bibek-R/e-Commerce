@@ -29,7 +29,7 @@ namespace Practise.POM
         IWebElement proceedToCheckout => driver.FindElement(By.LinkText("Proceed to checkout"));
 
         // extract the values for sub total, shipping, and total from the webpage and assign them to string type variable. the "Text[1..]" removes the "£" symbol from the text that FindElement would have extracted  
-        string subTotalExtract => driver.FindElement(By.CssSelector(".cart-subtotal>td:nth-child(2)>span:nth-child(1)>bdi:nth-child(1)")).Text[1..];
+        string subTotalExtract => driver.FindElement(By.CssSelector(".cart-subtotal>td:nth-child(2)>span:nth-child(1)>bdi:nth-child(1)")).Text[1..]; //removes the first character
 
         string discountAmount => driver.FindElement(By.CssSelector("#post-5 > div > div > div.cart-collaterals > div > table > tbody > tr.cart-discount.coupon-edgewords > td > span")).Text[1..];
 
