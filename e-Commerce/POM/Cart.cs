@@ -20,7 +20,7 @@ namespace Practise.POM
 
         //Locators
 
-        IWebElement couponTextBox => driver.FindElement(By.Id("coupon_code")); //coupon code
+        IWebElement couponTextBox => driver.FindElement(By.Id("coupon_code"));
         IWebElement enterCoupon => driver.FindElement(By.Id("coupon_code"));
         IWebElement applyCoupon => driver.FindElement(By.Name("apply_coupon"));
         IWebElement myAccountMenuItem => driver.FindElement(By.LinkText("My account"));
